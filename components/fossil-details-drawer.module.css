@@ -1,0 +1,223 @@
+.drawer,
+.drawerEmpty {
+  height: 76vh;
+  overflow: auto;
+  padding: 18px;
+  border-radius: 32px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.drawerEmpty {
+  display: grid;
+  place-items: center;
+}
+
+.drawerEmpty h2,
+.drawerHeader h2,
+.section h3 {
+  margin: 0;
+}
+
+.drawerEmpty p,
+.location,
+.section p,
+.recordCard span,
+.moreText {
+  color: var(--muted);
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+.location {
+  margin: 6px 0 0;
+}
+
+.timeBlock {
+  display: grid;
+  gap: 2px;
+  margin: 12px 0 0;
+}
+
+.timeBlock strong {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.timeBlock span {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.timeBlock small {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.siteCount {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.closeButton {
+  border: 1px solid var(--line);
+  background: var(--panel-strong);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 16px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.artwork {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  border-radius: 24px;
+}
+
+.photo {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  object-position: center;
+  margin-top: 16px;
+  border-radius: 28px;
+  border: 1px solid var(--line);
+  background: var(--panel-strong);
+}
+
+.fossilPicker {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.fossilChip,
+.fossilChipActive {
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: var(--panel-strong);
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 18px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.fossilChip span,
+.fossilChipActive span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.fossilChipActive {
+  background: var(--accent-soft);
+  border-color: rgba(184, 92, 56, 0.4);
+}
+
+.artworkLabel,
+.artworkTitle {
+  fill: currentColor;
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.artworkLabel {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.artworkTitle {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.metaGrid div,
+.recordCard {
+  padding: 12px 14px;
+  border-radius: 20px;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+}
+
+.metaGrid span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.metaGrid strong {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.section {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.sourceLink {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.detailList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.recordList {
+  display: grid;
+  gap: 10px;
+}
+
+.recordCard {
+  display: grid;
+  gap: 4px;
+}
+
+@media (max-width: 960px) {
+  .drawer,
+  .drawerEmpty {
+    height: auto;
+  }
+
+  .metaGrid {
+    grid-template-columns: 1fr;
+  }
+}
