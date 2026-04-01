@@ -3,3 +3,4 @@ node_modules
 out
 *.pyc
 __pycache__
+next-env.d.ts
